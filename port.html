@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viswaah A | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: #111827;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2563eb;
+}
+
+/* Header */
+header {
+    padding-top: 120px;
+    text-align: center;
+    background: #111827;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #2563eb;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #d1d5db;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 3px solid #2563eb;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<header id="home">
+    <!-- Replace profile.jpg with your image file -->
+    <img src="profile.jpeg" alt="Viswaah" class="profile-img">
+    <h1>Viswaah A</h1>
+    <p>Full Stack Developer | Mobile App Developer | UI/UX Enthusiast</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a 3rd-year Computer Science student passionate about building
+            scalable web and mobile applications. I enjoy working with
+            Flutter, React, and Python and continuously improving my
+            development skills.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <p><b>Programming:</b> C, C++, Java, Python, Flutter</p>
+        <p><b>Web:</b> HTML, CSS, JavaScript, React, Node.js</p>
+        <p><b>Database:</b> SQL, Oracle, Firebase</p>
+        <p><b>Tools:</b> GitHub, VS Code, MS Excel</p>
+    </div>
+</section>
+
+<section id="internships">
+    <h2>Internships</h2>
+    <div class="card">
+        <h3>UI/UX Intern – Learnsoft.org</h3>
+        <p>Worked on user interface design and usability improvements.</p>
+    </div>
+    <div class="card">
+        <h3>Full Stack Web Development Intern – Main Flow Services</h3>
+        <p>Worked on front-end and back-end web applications.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>QARO – Quick Auto Repair & Outlet</h3>
+        <p>Flutter-based mobile application for vehicle booking and service tracking.</p>
+    </div>
+    <div class="card">
+        <h3>Electricity Theft Detection Kit</h3>
+        <p>IoT-based embedded system for electricity monitoring.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: aviswaah2309@gmail.com</p>
+        <p>Phone: 8807300923</p>
+        <p>LinkedIn: linkedin.com/in/viswaah-a-638894322</p>
+        <p>LeetCode: leetcode.com/u/Viswaah</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Viswaah A | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
